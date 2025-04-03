@@ -68,7 +68,7 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
             <Button
               variant="secondary"
               size="icon"
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-md rounded-full"
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-black text-white hover:bg-black/80 shadow-md rounded-full"
               onClick={() => scroll("left")}
             >
               <ChevronLeft className="h-6 w-6" />
@@ -100,7 +100,7 @@ export default function TeamCarousel({ teamMembers }: TeamCarouselProps) {
             <Button
               variant="secondary"
               size="icon"
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/80 hover:bg-white shadow-md rounded-full"
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-black text-white hover:bg-black/80 shadow-md rounded-full"
               onClick={() => scroll("right")}
             >
               <ChevronRight className="h-6 w-6" />

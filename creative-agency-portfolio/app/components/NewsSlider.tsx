@@ -71,7 +71,7 @@ export default function NewsSlider({ articles }: NewsSliderProps) {
 
       <button
         onClick={handlePrev}
-        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md z-10"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-black/80 text-white rounded-full p-2 shadow-md z-10 hover:bg-black transition-colors"
         aria-label="Anterior"
       >
         <svg
@@ -91,7 +91,7 @@ export default function NewsSlider({ articles }: NewsSliderProps) {
 
       <button
         onClick={handleNext}
-        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 rounded-full p-2 shadow-md z-10"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-black/80 text-white rounded-full p-2 shadow-md z-10 hover:bg-black transition-colors"
         aria-label="Siguiente"
       >
         <svg
@@ -114,7 +114,7 @@ export default function NewsSlider({ articles }: NewsSliderProps) {
           <button
             key={index}
             onClick={() => setCurrentIndex(index)}
-            className={`w-2 h-2 rounded-full ${index === currentIndex ? "bg-primary" : "bg-gray-300"}`}
+            className={`w-2 h-2 rounded-full ${index === currentIndex ? "bg-black" : "bg-gray-300"}`}
             aria-label={`Ir a la diapositiva ${index + 1}`}
           />
         ))}
